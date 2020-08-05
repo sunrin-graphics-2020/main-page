@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 500vh;
+}
+
+body.before-load {
+    overflow-y: hidden;
+}
+
+.title {
+    z-index: 1;
+    font-family: 'Carmen Sans Regular';
+    color: white;
+    font-size: 1rem;
+}
+
+.canvas {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.text-box {
+    display: flex;
+
+}
+
+.container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background: transparent;
+
+}
+
+.navbar-burger {
+    color: white;
+}
+
+.navbar-item img {
+    height: 3rem;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.navbar-item.brand-text {
+    font-weight: 300;
+}
+
+.navbar-item,
+.navbar-link {
+    font-size: 1rem;
+    color: white;
+}
+
+.navbar-item:hover {
+    background: transparent !important;
+    color: white !important;
+}
+
+.navbar-item img {
+    max-height: 10rem;
+}
+
+.navbar-menu {
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .navbar-item img {
+        height: 1.5rem;
+    }
+}
+
+.hero-box {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
