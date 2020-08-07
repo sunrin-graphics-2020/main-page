@@ -1,7 +1,9 @@
 //canvas full
-let mobilecanvas = document.getElementById('canvas');
-mobilecanvas.width = window.innerWidth;
-mobilecanvas.height = window.innerHeight;
+function resize(){
+    let mobilecanvas = document.getElementById('canvas');
+    mobilecanvas.width = window.innerWidth;
+    mobilecanvas.height = window.innerHeight;
+}
 
 // resize => canvas full
 /*
@@ -12,9 +14,11 @@ $("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs(
 
 // resize => reload
 $(document).ready(function() {
+    resize() //init resize for mobile
     $(window).on("resize", function() {
         console.log("resize")
-        location.reload('/')
+        resize()
+        //location.reload('/')
     });
 });
 // scroll down
@@ -23,3 +27,4 @@ $(window).scroll(function() {
         window.location.replace("http://sunrin.graphics/2020/exhibition/");
     }
 });
+
